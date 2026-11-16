@@ -1,0 +1,20 @@
+{
+  "name": "atelier-ui",
+  "version": "1.0.0",
+  "description": "Portable agent skills for original frontend art direction, UI/UX architecture, component discovery, design systems and quality assurance.",
+  "author": {
+    "name": "Guilherme Miranda",
+    "url": "https://github.com/guilhermiranda25"
+  },
+  "license": "MIT",
+  "keywords": [
+    "ui",
+    "ux",
+    "frontend",
+    "react",
+    "design-system",
+    "skills",
+    "claude",
+    "codex"
+  ]
+}

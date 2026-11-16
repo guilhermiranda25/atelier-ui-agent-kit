@@ -1,0 +1,10 @@
+{
+  "name": "atelier-ui",
+  "version": "1.0.0",
+  "description": "Original high-fidelity UI/UX design engineering skills: art direction, design systems, frontend patterns, motion, asset selection, component research and audits.",
+  "author": {
+    "name": "Guilherme Miranda",
+    "url": "https://github.com/guilhermiranda25"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "atelier-ui",
+  "version": "1.0.0",
+  "description": "Premium original frontend and UX workflows; no bundled third-party code.",
+  "author": {
+    "name": "Guilherme Miranda",
+    "url": "https://github.com/guilhermiranda25"
+  },
+  "skills": "./skills/"
+}

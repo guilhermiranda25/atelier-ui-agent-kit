@@ -1,0 +1,58 @@
+/* Atelier UI original sample — adapt to the project's identity. */
+:root {
+  color-scheme: light;
+  --color-canvas: #f7f8f7;
+  --color-surface: #ffffff;
+  --color-surface-raised: #ffffff;
+  --color-ink: #152624;
+  --color-ink-soft: #51635f;
+  --color-border: #dfe5e1;
+  --color-brand: #0b514f;
+  --color-brand-hover: #084442;
+  --color-brand-ink: #ffffff;
+  --color-accent: #97d700;
+  --color-danger: #af303b;
+  --color-focus: #236ee5;
+  --radius-sm: .375rem;
+  --radius-md: .75rem;
+  --radius-lg: 1.25rem;
+  --space-1: .25rem;
+  --space-2: .5rem;
+  --space-3: .75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --font-body: "Segoe UI", system-ui, sans-serif;
+  --font-feature: "Segoe UI", system-ui, sans-serif;
+  --text-body: clamp(.9375rem, .9rem + .15vw, 1.0625rem);
+  --text-heading: clamp(2rem, 1.35rem + 3.25vw, 4.625rem);
+  --easing-standard: cubic-bezier(.2,.75,.2,1);
+  --duration-fast: 140ms;
+  --duration-normal: 240ms;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --color-canvas: #0d1615;
+  --color-surface: #15211f;
+  --color-surface-raised: #1c2a27;
+  --color-ink: #eef4f1;
+  --color-ink-soft: #acbfba;
+  --color-border: #344440;
+  --color-brand: #74d8c1;
+  --color-brand-hover: #a0e8d8;
+  --color-brand-ink: #0d201b;
+  --color-accent: #b6e650;
+  --color-danger: #ff7d89;
+  --color-focus: #88bcff;
+}
+
+body { color: var(--color-ink); background: var(--color-canvas); font-family: var(--font-body); }
+:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 3px; }
+.skip-link { position: absolute; left: -9999px; top: .5rem; }
+.skip-link:focus { left: .5rem; z-index: 1000; }
+@media (prefers-reduced-motion: reduce) {
+  .decorative-motion { transition: none !important; animation: none !important; }
+}

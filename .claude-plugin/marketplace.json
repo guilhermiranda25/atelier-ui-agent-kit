@@ -1,0 +1,14 @@
+{
+  "name": "atelier-ui-marketplace",
+  "description": "Original premium frontend and UX engineering skills",
+  "owner": {
+    "name": "Guilherme Miranda"
+  },
+  "plugins": [
+    {
+      "name": "atelier-ui",
+      "source": "./",
+      "description": "Eight original frontend art direction, UX, motion, product and audit skills"
+    }
+  ]
+}

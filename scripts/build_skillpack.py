@@ -20,7 +20,9 @@ def build(check=False):
     if not re.fullmatch(r'\d+\.\d+\.\d+', version):
         raise ValueError('VERSION must contain a semantic version')
     manifest = json.loads((ROOT/'skillpack-manifest.json').read_text(encoding='utf-8'))
-    paths = sorted(p for p in (ROOT/'skills').rglob('*') if p.is_file() and '__pycache__' not in p.parts)
+    paths = sorted((p for p in (ROOT/'skills').rglob('*')
+                    if p.is_file() and '__pycache__' not in p.parts),
+                   key=lambda p: p.relative_to(ROOT).as_posix())
     if any(p.is_symlink() for p in (ROOT/'skills').rglob('*')):
         raise ValueError('Symlinks are not distributable')
     names = {p.parent.name for p in paths if p.name == 'SKILL.md'}

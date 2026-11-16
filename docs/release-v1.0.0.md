@@ -12,7 +12,7 @@ then run `py restaurar_codex.py --somente-uiux` or
 `SHA256SUMS.txt` covers the ZIP, manifest and both installers.
 
 The ZIP's SHA-256 is:
-`d4b587421435cb15fb06a89ae8f62a4c02979e881768d5d61f62773325c8b7c0`.
+`da96a9ce215abafdf70d394969ffdb7caad97e1996693090bd5b4cc8baae515c`.
 
 See the guides and validation record in the source for tested behavior and limits.
 Full restoration, authenticated agent tasks, external MCP services and frontend

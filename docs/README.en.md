@@ -194,15 +194,15 @@ provides the ZIP, both installers, the manifest and `SHA256SUMS.txt`.
 Once you have an installer from the clone or release assets, it can fetch the ZIP:
 
 ```powershell
-py restaurar_codex.py --somente-uiux --uiux-url "https://github.com/guilhermiranda25/atelier-ui-agent-kit/releases/download/v1.0.0/uiux-skillpack.zip" --uiux-sha256 "d4b587421435cb15fb06a89ae8f62a4c02979e881768d5d61f62773325c8b7c0"
-py restaurar_claude.py --somente-uiux --uiux-url "https://github.com/guilhermiranda25/atelier-ui-agent-kit/releases/download/v1.0.0/uiux-skillpack.zip" --uiux-sha256 "d4b587421435cb15fb06a89ae8f62a4c02979e881768d5d61f62773325c8b7c0"
+py restaurar_codex.py --somente-uiux --uiux-url "https://github.com/guilhermiranda25/atelier-ui-agent-kit/releases/download/v1.0.0/uiux-skillpack.zip" --uiux-sha256 "da96a9ce215abafdf70d394969ffdb7caad97e1996693090bd5b4cc8baae515c"
+py restaurar_claude.py --somente-uiux --uiux-url "https://github.com/guilhermiranda25/atelier-ui-agent-kit/releases/download/v1.0.0/uiux-skillpack.zip" --uiux-sha256 "da96a9ce215abafdf70d394969ffdb7caad97e1996693090bd5b4cc8baae515c"
 ```
 
 Or set environment variables for the current PowerShell session:
 
 ```powershell
 $env:UIUX_SKILL_URL = "https://github.com/guilhermiranda25/atelier-ui-agent-kit/releases/download/v1.0.0/uiux-skillpack.zip"
-$env:UIUX_SKILL_SHA256 = "d4b587421435cb15fb06a89ae8f62a4c02979e881768d5d61f62773325c8b7c0"
+$env:UIUX_SKILL_SHA256 = "da96a9ce215abafdf70d394969ffdb7caad97e1996693090bd5b4cc8baae515c"
 py restaurar_codex.py --somente-uiux
 # Clear them to use the local package again:
 Remove-Item Env:UIUX_SKILL_URL

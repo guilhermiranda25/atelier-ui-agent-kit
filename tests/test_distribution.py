@@ -38,6 +38,9 @@ class DistributionTests(unittest.TestCase):
             command = [sys.executable, str(checkout/'scripts/build_skillpack.py')]
             first = subprocess.run(command, capture_output=True, text=True)
             self.assertEqual(first.returncode, 0, first.stdout+first.stderr)
+            manifest = json.loads((checkout/'skillpack-manifest.json').read_text(encoding='utf-8'))
+            # Canonical string order must not depend on WindowsPath/PosixPath ordering.
+            self.assertEqual(list(manifest['files']), sorted(manifest['files']))
             archive = (checkout/'uiux-skillpack.zip').read_bytes()
             second = subprocess.run(command, capture_output=True, text=True)
             self.assertEqual(second.returncode, 0, second.stdout+second.stderr)

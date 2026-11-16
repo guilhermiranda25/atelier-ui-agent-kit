@@ -10,6 +10,7 @@ Initial public release by Guilherme Miranda.
 - Fixes partial-copy and partial-deletion rollback, malformed manifest handling and Windows filename aliases.
 - Corrects Windows test isolation and Python launcher compatibility; isolated installation backs up only replaced skills.
 - Quotes the assets skill's description for valid YAML metadata without changing its workflow.
+- Fixes cross-platform manifest ordering found by the initial remote Linux CI run.
 - Adds centralized VERSION, deterministic packaging, release checksums and an offline Windows/Linux Python 3.10/3.14 CI matrix.
 - Validates Claude plugin/marketplace manifests and isolated marketplace installation.
 

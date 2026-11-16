@@ -44,6 +44,11 @@ Both helper commands were also executed on Windows: the contrast checker returne
 21.00:1 for black/white, and the advisory structural scanner found zero matches
 in the reference examples. These checks do not establish application accessibility.
 
+The first remote CI run exposed an OS-dependent manifest ordering bug in the new
+builder: WindowsPath sorting differs from PosixPath sorting. A regression assertion
+now requires canonical string ordering; the builder was corrected and artifacts
+rebuilt before tagging. Remote CI must pass on the release commit.
+
 ## Review boundaries
 
 Source and archive inventories were inspected for private configuration, credentials,
